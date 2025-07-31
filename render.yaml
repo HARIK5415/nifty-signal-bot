@@ -1,0 +1,8 @@
+services:
+  - type: cron
+    name: nifty-signal-bot
+    runtime: python
+    repo: https://github.com/HARIK5415/nifty-signal-bot.git
+    schedule: "*/1 9-15 * * 1-5"  # Every 1 min during 9:00 to 15:59 Mon-Fri
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"

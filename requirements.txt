@@ -1,0 +1,4 @@
+tvDatafeed
+pandas
+numpy
+requests
